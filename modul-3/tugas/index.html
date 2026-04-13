@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="device-width, initial-scale=1.0" />
+    <title>Profil Saya</title>
+    <style>
+      /* RESET & BASE */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --primary: #4caf50;
+        --secondary: #333;
+        --light: #f4f4f4;
+        --accent: #ff9800;
+        --text: #222;
+        --font-main: Arial, sans-serif;
+      }
+
+      body {
+        font-family: var(--font-main);
+        line-height: 1.6;
+        background: var(--light);
+        color: var(--text);
+      }
+
+      /* HEADER */
+      header {
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+        color: white;
+        padding: 30px;
+        text-align: center;
+      }
+
+      /* NAVBAR */
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        background: var(--secondary);
+        padding: 15px;
+        position: sticky;
+        top: 0;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: var(--accent);
+      }
+
+      section {
+        padding: 30px;
+      }
+
+      /* TENTANG (2 KOLOM) */
+      .tentang-container {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+
+      .tentang-container img {
+        width: 150px;
+        border-radius: 50%;
+      }
+
+      /* KEAHLIAN BADGE */
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .badge {
+        background: var(--primary);
+        color: white;
+        padding: 8px 12px;
+        border-radius: 20px;
+        font-size: 14px;
+      }
+
+      /* FORM */
+      form {
+        max-width: 500px;
+      }
+
+      form label {
+        display: block;
+        margin-top: 10px;
+      }
+
+      form input,
+      form select,
+      form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        margin-top: 15px;
+        background: var(--primary);
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: var(--accent);
+      }
+
+      /* FOOTER */
+      footer {
+        background: var(--secondary);
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Profil Saya</h1>
+      <p>Selamat datang di halaman profil pribadi</p>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+      <a href="#tentang">Tentang Saya</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#pengalaman">Pengalaman</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <!-- Main -->
+    <main>
+      <!-- Section 1 -->
+      <section id="tentang">
+        <h2>Tentang Saya</h2>
+        <div class="tentang-container">
+          <img src="ftAldho.jpeg" alt="Foto profil saya sedang tersenyum" />
+          <div>
+            <p><strong>Nama:</strong> Aldho Perayudha</p>
+            <p><strong>Jurusan:</strong> Teknik Informatika</p>
+            <p><strong>Universitas:</strong> Politeknik negeri lhokseumawe</p>
+            <p>
+              Saya adalah mahasiswa yang berfokus pada bidang teknologi
+              informasi dengan ketertarikan kuat pada pengembangan web dan
+              pemrograman, serta terus berusaha mengembangkan keterampilan di
+              bidang tersebut.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="keahlian">
+        <h2>Keahlian</h2>
+        <div class="skills">
+          <span class="badge">HTML</span>
+          <span class="badge">MySQL</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">CSS</span>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="pengalaman">
+        <h2>Pengalaman</h2>
+        <ol>
+          <li>2025 - Belajar bahasa C++</li>
+          <li>2026 - Belajar dasar HTML & CSS</li>
+        </ol>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="kontak">
+        <h2>Kontak</h2>
+        <form>
+          <label>Nama:</label>
+          <input type="text" name="nama" required />
+
+          <label>Email:</label>
+          <input type="email" name="email" required />
+
+          <label>Subjek:</label>
+          <select name="subjek">
+            <option value="pertanyaan">Pertanyaan</option>
+            <option value="kerjasama">Kerjasama</option>
+            <option value="lainnya">Lainnya</option>
+          </select>
+
+          <label>Pesan:</label>
+          <textarea name="pesan" rows="5" required></textarea>
+
+          <button type="submit">Kirim</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Aldho Perayudha | 2026</p>
+      <p>
+        <a href="#" style="color: white">GitHub</a> |
+        <a href="#" style="color: white">LinkedIn</a>
+      </p>
+    </footer>
+  </body>
+</html>
