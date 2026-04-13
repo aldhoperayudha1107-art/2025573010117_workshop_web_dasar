@@ -1,0 +1,126 @@
+/* RESET & BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #4caf50;
+  --secondary: #333;
+  --light: #f4f4f4;
+  --accent: #ff9800;
+  --text: #222;
+  --font-main: Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  line-height: 1.6;
+  background: var(--light);
+  color: var(--text);
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: var(--secondary);
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* SECTION */
+section {
+  padding: 30px;
+}
+
+/* TENTANG (2 KOLOM) */
+.tentang-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.tentang-container img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* KEAHLIAN BADGE */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge {
+  background: var(--primary);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* FORM */
+form {
+  max-width: 500px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* BUTTON */
+button {
+  margin-top: 15px;
+  background: var(--primary);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--accent);
+}
+
+/* FOOTER */
+footer {
+  background: var(--secondary);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
