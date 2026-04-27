@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 2</title>
+    <link rel="stylesheet" href="latihan-2.css" />
+  </head>
+  <body>
+    <h1>Latihan UI Components</h1>
+
+    <!-- 1. ACCORDION / FAQ -->
+    <section class="faq">
+      <h2>FAQ</h2>
+
+      <details>
+        <summary>Apa itu CSS Grid?</summary>
+        <p>
+          CSS Grid adalah sistem layout berbasis grid untuk membuat tampilan
+          web.
+        </p>
+      </details>
+
+      <details>
+        <summary>Apa itu Flexbox?</summary>
+        <p>Flexbox digunakan untuk layout satu dimensi (baris atau kolom).</p>
+      </details>
+
+      <details>
+        <summary>Apa itu pseudo-element?</summary>
+        <p>
+          Pseudo-element digunakan untuk styling bagian tertentu dari elemen.
+        </p>
+      </details>
+    </section>
+
+    <!-- 2. IMAGE HOVER OVERLAY -->
+    <section class="gallery">
+      <h2>Gallery</h2>
+      <div class="grid">
+        <div class="item" data-title="Gambar 1">
+          <img src="https://picsum.photos/300?random=1" alt="" />
+        </div>
+        <div class="item" data-title="Gambar 2">
+          <img src="https://picsum.photos/300?random=2" alt="" />
+        </div>
+        <div class="item" data-title="Gambar 3">
+          <img src="https://picsum.photos/300?random=3" alt="" />
+        </div>
+        <div class="item" data-title="Gambar 4">
+          <img src="https://picsum.photos/300?random=4" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PROGRESS BAR -->
+    <section class="progress-section">
+      <h2>Progress</h2>
+
+      <div class="progress" style="--progress: 75%">
+        <span>HTML - 75%</span>
+      </div>
+
+      <div class="progress" style="--progress: 50%">
+        <span>CSS - 50%</span>
+      </div>
+
+      <div class="progress" style="--progress: 90%">
+        <span>JavaScript - 90%</span>
+      </div>
+    </section>
+  </body>
+</html>
