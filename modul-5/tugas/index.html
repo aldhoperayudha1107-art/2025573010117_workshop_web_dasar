@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechStore - Gadget Terbaru</title>
+  </head>
+
+  <body
+    class="bg-gradient-to-br from-gray-100 to-gray-200 dark:from-slate-900 dark:to-slate-800 text-gray-800 dark:text-white transition"
+  >
+    <!-- HEADER -->
+    <header class="bg-black/90 backdrop-blur text-white shadow">
+      <div class="container-custom flex justify-between items-center py-4">
+        <h1 class="text-xl font-bold tracking-wide">TechStore</h1>
+
+        <nav class="hidden md:flex gap-6">
+          <a href="#" class="hover:text-cyan-400">Beranda</a>
+          <a href="#" class="hover:text-cyan-400">Produk</a>
+          <a href="#" class="hover:text-cyan-400">Promo</a>
+          <a href="#" class="hover:text-cyan-400">Kontak</a>
+        </nav>
+
+        <button id="toggleDark" class="btn-outline">🌙</button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section
+      class="container-custom py-12 grid md:grid-cols-2 gap-10 items-center"
+    >
+      <div>
+        <h2 class="section-title">Gadget Terbaru, Teknologi Masa Kini</h2>
+
+        <p class="section-subtitle">
+          Temukan smartphone, laptop, dan aksesoris terbaik dengan harga
+          terjangkau.
+        </p>
+
+        <a href="#" class="btn-primary">Belanja Sekarang</a>
+      </div>
+
+      <div>
+        <img
+          src="https://picsum.photos/600/400?technology"
+          class="rounded-2xl shadow-xl hover:scale-105 transition"
+        />
+      </div>
+    </section>
+
+    <!-- PRODUK -->
+    <section class="container-custom pb-12">
+      <h2 class="section-title">Produk Unggulan</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="https://picsum.photos/400/300?phone" class="img-produk" />
+          <h3 class="font-bold">iPhone 15 Pro</h3>
+          <p class="font-semibold">Rp 20.000.000</p>
+          <button class="btn-primary mt-3 w-full">Beli</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="https://picsum.photos/400/300?laptop" class="img-produk" />
+          <h3 class="font-bold">MacBook Air M2</h3>
+          <p class="font-semibold">Rp 18.500.000</p>
+          <button class="btn-primary mt-3 w-full">Beli</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img
+            src="https://picsum.photos/400/300?headphone"
+            class="img-produk"
+          />
+          <h3 class="font-bold">Sony WH-1000XM5</h3>
+          <p class="font-semibold">Rp 5.500.000</p>
+          <button class="btn-primary mt-3 w-full">Beli</button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <img src="https://picsum.photos/400/300?tablet" class="img-produk" />
+          <h3 class="font-bold">iPad Pro</h3>
+          <p class="font-semibold">Rp 15.000.000</p>
+          <button class="btn-primary mt-3 w-full">Beli</button>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+          <img
+            src="https://picsum.photos/400/300?smartwatch"
+            class="img-produk"
+          />
+          <h3 class="font-bold">Apple Watch Series 9</h3>
+          <p class="font-semibold">Rp 7.000.000</p>
+          <button class="btn-primary mt-3 w-full">Beli</button>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+          <img src="https://picsum.photos/400/300?camera" class="img-produk" />
+          <h3 class="font-bold">Canon EOS R50</h3>
+          <p class="font-semibold">Rp 12.000.000</p>
+          <button class="btn-primary mt-3 w-full">Beli</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black dark:bg-slate-950 text-white py-6 text-center">
+      <p>© 2026 TechStore</p>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
