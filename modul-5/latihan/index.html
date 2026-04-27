@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DesignPro - Jasa Desain</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+  <body
+    class="bg-gray-50 dark:bg-slate-950 font-sans transition-colors duration-300"
+  >
+    <!-- NAVBAR -->
+    <header class="bg-white dark:bg-slate-800 shadow sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <h1 class="text-xl font-bold dark:text-white">DesignPro</h1>
+
+        <ul class="hidden md:flex gap-6">
+          <li>
+            <a href="#" class="hover:text-blue-500 dark:text-white">Home</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-blue-500 dark:text-white">Fitur</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-blue-500 dark:text-white"
+              >Testimoni</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-blue-500 dark:text-white">Kontak</a>
+          </li>
+        </ul>
+
+        <button
+          id="toggleDark"
+          class="p-2 rounded-lg bg-slate-700 hover:bg-slate-600 text-white"
+        >
+          dark
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section
+      class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center p-6"
+    >
+      <div>
+        <span class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm">
+          🔥 Promo</span
+        >
+
+        <h2 class="text-3xl md:text-4xl font-bold mt-4 dark:text-white">
+          Solusi Desain Modern untuk Bisnismu
+        </h2>
+
+        <p class="mt-3 text-gray-600 dark:text-gray-300">
+          Kami membantu membuat brand kamu tampil profesional dan menarik.
+        </p>
+
+        <button class="btn btn-primary mt-5">Mulai Sekarang</button>
+      </div>
+
+      <img src="https://picsum.photos/500/300" class="rounded-xl shadow" />
+    </section>
+
+    <!-- FITUR -->
+    <section class="max-w-6xl mx-auto p-6">
+      <h2 class="text-2xl font-bold mb-6 dark:text-white">Fitur Unggulan</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="card">
+          <h3 class="font-semibold text-lg dark:text-white">Desain Cepat</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Proses cepat dan hasil berkualitas tinggi.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="font-semibold text-lg dark:text-white">
+            Harga Terjangkau
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Paket fleksibel sesuai kebutuhan kamu.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="font-semibold text-lg dark:text-white">Support</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Kami siap membantu kapan saja.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section class="bg-gray-200 dark:bg-slate-800 py-10">
+      <div class="max-w-6xl mx-auto p-6">
+        <h2 class="text-2xl font-bold mb-6 dark:text-white">Apa kata Klien</h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="card dark:text-white">
+            <p>"Pelayanan sangat memuaskan!"</p>
+            <h4 class="mt-3 font-semibold">- Andi</h4>
+          </div>
+
+          <div class="card dark:text-white">
+            <p>"Desainnya keren banget!."</p>
+            <h4 class="mt-3 font-semibold">- Budi</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white dark:bg-slate-900 py-10">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 p-6">
+        <div>
+          <h4 class="font-bold text-lg dark:text-white">DesignPro</h4>
+          <p class="dark:text-gray-300">Jasa desain terpercaya.</p>
+        </div>
+
+        <div>
+          <h4 class="font-bold dark:text-white">Menu</h4>
+          <ul class="space-y-1 dark:text-gray-300">
+            <li>Home</li>
+            <li>Fitur</li>
+            <li>Kontak</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold dark:text-white">Kontak</h4>
+          <p class="dark:text-gray-300">Email: info@designpro.com</p>
+          <p class="dark:text-gray-300">WA: 082196106667</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
