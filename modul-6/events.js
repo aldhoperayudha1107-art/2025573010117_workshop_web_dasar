@@ -1,10 +1,12 @@
 // ── Event Delegation: tangani click semua .btn-warna dari satu listener ──
 const kontainerWarna = document.getElementById("kontainer-warna");
 const preview = document.getElementById("preview-warna");
+
 kontainerWarna.addEventListener("click", (e) => {
   // e.target adalah elemen yang diklik (bisa tombol atau ikon di dalamnya)
   const tombol = e.target.closest(".btn-warna");
   if (!tombol) return; // klik di area bukan tombol, abaikan
+
   const warna = tombol.dataset.warna; // ambil data-warna attribute
   preview.style.backgroundColor = warna;
   preview.textContent = `Warna: ${warna}`;
@@ -14,6 +16,7 @@ kontainerWarna.addEventListener("click", (e) => {
     .forEach((b) => b.classList.remove("aktif"));
   tombol.classList.add("aktif");
 });
+
 // ── Input event: real-time character count ──────────────────────────────
 const textarea = document.getElementById("teks-area");
 const hitungChar = document.getElementById("hitung-char");
@@ -24,6 +27,7 @@ textarea.addEventListener("input", (e) => {
   hitungChar.style.color = panjang > MAKS * 0.9 ? "#E74C3C" : "#888";
   if (panjang > MAKS) e.target.value = e.target.value.slice(0, MAKS);
 });
+
 // ── Keyboard event: shortcut ─────────────────────────────────────────────
 document.addEventListener("keydown", (e) => {
   const log = document.getElementById("log-keyboard");
@@ -36,6 +40,7 @@ document.addEventListener("keydown", (e) => {
   }
   log.textContent = `Tombol ditekan: ${e.key} | Ctrl: ${e.ctrlKey} | Shift: ${e.shiftKey}`;
 });
+
 // ── Focus & Blur: highlight field aktif ─────────────────────────────────
 document.querySelectorAll(".field-fokus").forEach((input) => {
   input.addEventListener("focus", (e) => {
@@ -45,6 +50,7 @@ document.querySelectorAll(".field-fokus").forEach((input) => {
     e.target.parentElement.classList.remove("field-aktif");
   });
 });
+
 // ── Scroll event: progress bar ──────────────────────────────────────────
 const progressBar = document.getElementById("scroll-progress");
 window.addEventListener("scroll", () => {
