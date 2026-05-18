@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mini Shop</title>
+    <style>
+      body {
+        font-family: Arial;
+        margin: 0;
+        background: #f4f4f4;
+      }
+
+      header {
+        background: #2196f3;
+        color: white;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .container {
+        display: flex;
+        gap: 15px;
+        padding: 15px;
+      }
+
+      .products {
+        flex: 2;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 10px;
+      }
+
+      .card {
+        background: white;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      .price {
+        color: green;
+        font-weight: bold;
+      }
+
+      button {
+        padding: 6px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        margin-top: 5px;
+      }
+
+      .add {
+        background: #4caf50;
+        color: white;
+        width: 100%;
+      }
+
+      .cart {
+        flex: 1;
+        background: white;
+        padding: 10px;
+        border-radius: 8px;
+        height: fit-content;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .cart-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 5px;
+      }
+
+      .qty button {
+        padding: 3px 6px;
+        margin: 0 2px;
+      }
+
+      .remove {
+        background: red;
+        color: white;
+      }
+
+      .checkout {
+        background: #2196f3;
+        color: white;
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+      }
+
+      .badge {
+        background: red;
+        padding: 3px 7px;
+        border-radius: 50%;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Mini Shop</h2>
+      <div>🛒 <span id="badge" class="badge">0</span></div>
+    </header>
+
+    <div class="container">
+      <div class="products" id="productList"></div>
+
+      <div class="cart">
+        <h3>Keranjang</h3>
+        <div id="cartList"></div>
+        <h4 id="total">Total: Rp 0</h4>
+        <button class="checkout" id="checkoutBtn">Checkout</button>
+      </div>
+    </div>
+
+    <script src="latihan-2.js"></script>
+  </body>
+</html>
