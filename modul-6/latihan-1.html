@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Interaktif</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .calculator {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 280px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .display {
+        width: 100%;
+        height: 60px;
+        font-size: 28px;
+        text-align: right;
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+
+      .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+
+      button {
+        padding: 15px;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background: #e0e0e0;
+      }
+
+      button:hover {
+        background: #d0d0d0;
+      }
+
+      .operator {
+        background: orange;
+        color: white;
+      }
+
+      .equal {
+        background: green;
+        color: white;
+      }
+
+      .clear {
+        background: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display" id="display">0</div>
+
+      <div class="buttons" id="buttons">
+        <button class="clear" data-value="C">C</button>
+        <button class="operator" data-value="/">÷</button>
+        <button class="operator" data-value="*">×</button>
+        <button class="operator" data-value="-">−</button>
+
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button class="operator" data-value="+">+</button>
+
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button data-value=".">.</button>
+
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button class="equal" data-value="=">=</button>
+
+        <button data-value="0" style="grid-column: span 4">0</button>
+      </div>
+    </div>
+
+    <script src="latihan-1.js"></script>
+  </body>
+</html>
