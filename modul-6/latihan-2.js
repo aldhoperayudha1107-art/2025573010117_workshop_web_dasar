@@ -1,22 +1,22 @@
 const products = [
-  { id: 1, name: "Laptop", price: 7000000, img: "Laptop.png" },
+  { id: 1, name: "Laptop", price: 10000000, img: "Laptop.png" },
   {
     id: 2,
     name: "Headphone",
-    price: 250000,
+    price: 8000000,
     img: "hp.png",
   },
   {
     id: 3,
     name: "Keyboard",
-    price: 150000,
+    price: 300000,
     img: "keyboard.png",
   },
   { id: 4, name: "Mouse", price: 100000, img: "mouse.png" },
   {
     id: 5,
     name: "Monitor",
-    price: 2000000,
+    price: 20000000,
     img: "monitor.png",
   },
 ];
